@@ -135,38 +135,115 @@ html {
 body {
   margin: 0 auto;
 }
+.navbar {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.navbar a {
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100%;
+  padding-right: 10%;
+  color: white;
+}
+.navbar .nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .navbar {
+    width: 100vw;
+  }
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  color: #021859;
+  color: #f4f4f4;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 body #showcase {
-  background-image: url('../img/marketingpage.jpg');
+  background-image: url('../img/marketdark.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  opacity: 85%;
+  opacity: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 20px;
+  font-weight: bold;
 }
 body #showcase h1 {
   font-size: 5rem;
   font-family: 'Bitter', serif;
   line-height: 1.2;
+  margin-bottom: 10%;
 }
 body .button {
   font-size: 2rem;
   text-decoration: none;
-  color: white;
+  color: #f4f4f4;
   border: 1px solid black;
   border-radius: 10px;
   margin-top: 2%;
   padding: 10px 20px;
-  background-color: #021859;
+}
+body .button:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+.sectA {
+  padding: 2%;
+  background-color: black ;
+  color: white;
+  text-align: center;
+}
+.sectA h2 {
+  font-weight: bold;
+}
+.sectB {
+  padding: 2%;
+  background-color: #f4f4f4;
+  color: black ;
+  text-align: center;
+}
+.sectB h2 {
+  font-weight: bold;
+}
+.sectC {
+  display: flex;
+}
+.sectC div {
+  padding: 2%;
+}
+.sectC .box-1,
+.sectC .box-3 {
+  background-color: slategray ;
+  color: white;
+}
+.sectC .box-2 {
+  background-color: #f4f4f4;
+  color: black ;
+}
+@media (max-width: 500px) {
+  .sectC {
+    width: 100vw ;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller ;
+  }
+  .sectC * {
+    flex-basis: 30%;
+  }
 }
