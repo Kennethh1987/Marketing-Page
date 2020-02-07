@@ -1,56 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-
-    //    background-image: url('../img/contactpage.jpg');
-    //     background-size: cover;
 }
-
-
-
-
-// .contact-section{
-
-//     background-image: url('../img/marketdark.jpg');
-//     background-size: cover;
-//     background-position: center;
-//     height:100vh;
-//     opacity: 95%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-//     padding: 0 20px;
-//     font-weight: bold;
-
-
-//  }
 
 .contact-section {
 
     background-image: url('../img/contact3.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    opacity: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    font-weight: bold;
-   
+
+    .BG();
+
     h1 {
         text-align: center;
-        color: #f4f4f4;
+        color: @main-color;
     }
 
     .border {
         width: 10rem;
         height: 1rem;
-        background-color: #34495e;
+        background-color: @contact-color;
         margin: 4rem auto;
 
     }
@@ -60,9 +27,10 @@
         margin: auto;
         padding: 0 1rem;
         overflow: hidden;
-     @media @phone {
-           padding: 0;
-           margin: 0;
+
+        @media @phone {
+            padding: 0;
+            margin: 0;
         }
 
         .textarea {
@@ -73,12 +41,13 @@
         .contact-form-btn {
             float: center;
             border: 0;
-            background-color: #34495e;
-            padding:  1.2rem 5rem;
+            background-color: @contact-color;
+            padding: 1.2rem 5rem;
             border-radius: 2rem;
             cursor: pointer;
             transition: 0.5s;
-            &:hover{
+
+            &:hover {
                 background-color: #2980b9;
             }
         }
@@ -96,7 +65,7 @@
             transition: 0.5s;
 
             &:hover {
-                box-shadow: 0 0 1rem 0.4rem #34495e;
+                box-shadow: 0 0 1rem 0.4rem @contact-color;
             }
 
 

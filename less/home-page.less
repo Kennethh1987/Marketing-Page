@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
-    color: #f4f4f4;
+    color: @main-color;
 
     line-height: 1.6;
     overflow-x: hidden;
@@ -12,17 +12,7 @@ body {
 
     #showcase {
         background-image: url('../img/marketdark.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
-        opacity: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 20px;
-        font-weight: bold;
+        .BG();
 
 
 
@@ -31,7 +21,14 @@ body {
             font-family: 'Bitter', serif;
             line-height: 1.2;
             margin-bottom: 10%;
-            color: #f4f4f4;
+            color: @main-color;
+
+            @media @phone {
+                line-height: 2.0;
+                position: relative;
+                bottom: 1.8rem;
+
+            }
 
 
         }
@@ -41,14 +38,14 @@ body {
     .button {
         font-size: 2rem;
         text-decoration: none;
-        color: #f4f4f4;
+        color: @main-color;
         border: 1px solid black;
         border-radius: 10px;
         margin-top: 2%;
         padding: 10px 20px;
 
         &:hover {
-            background-color: #f4f4f4;
+            background-color: @main-color;
             color: black;
         }
 
@@ -70,9 +67,10 @@ body {
 
 .sectB {
     padding: 2%;
-    background-color: #f4f4f4;
+    background-color: @main-color;
     color: black;
     text-align: center;
+    border-bottom: 0.3rem solid #A6ABAB;
 
     h2 {
         font-weight: bold;
@@ -89,12 +87,12 @@ body {
 
     .box-1,
     .box-3 {
-        background-color: #A6ABAB;
+        background-color: black;
         color: white;
     }
 
     .box-2 {
-        background-color: #f4f4f4;
+        background-color: @main-color;
         color: black;
 
     }
@@ -115,5 +113,3 @@ body {
     }
 
 }
-
-
