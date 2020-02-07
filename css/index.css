@@ -223,6 +223,7 @@ body .button:hover {
   background-color: #f4f4f4;
   color: black;
   text-align: center;
+  border-bottom: 0.3rem solid #A6ABAB;
 }
 .sectB h2 {
   font-weight: bold;
@@ -235,7 +236,7 @@ body .button:hover {
 }
 .sectC .box-1,
 .sectC .box-3 {
-  background-color: #A6ABAB;
+  background-color: black;
   color: white;
 }
 .sectC .box-2 {
