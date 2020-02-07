@@ -166,6 +166,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
+  color: #f4f4f4;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -205,7 +206,7 @@ body .button:hover {
 }
 .sectA {
   padding: 2%;
-  background-color: black ;
+  background-color: black;
   color: white;
   text-align: center;
 }
@@ -215,7 +216,7 @@ body .button:hover {
 .sectB {
   padding: 2%;
   background-color: #f4f4f4;
-  color: black ;
+  color: black;
   text-align: center;
 }
 .sectB h2 {
@@ -234,16 +235,65 @@ body .button:hover {
 }
 .sectC .box-2 {
   background-color: #f4f4f4;
-  color: black ;
+  color: black;
 }
 @media (max-width: 500px) {
   .sectC {
-    width: 100vw ;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    font-size: smaller ;
+    font-size: smaller;
   }
   .sectC * {
     flex-basis: 30%;
   }
+}
+.contact-section {
+  background-image: url('../img/contact3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.contact-section h1 {
+  text-align: center;
+  color: #f4f4f4;
+}
+.contact-section .border {
+  width: 10rem;
+  height: 1rem;
+  background-color: #34495e;
+  margin: 4rem auto;
+}
+.contact-section .contact-form {
+  max-width: 60rem;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+.contact-section .contact-form .textarea {
+  resize: none;
+  height: 12rem;
+}
+.contact-section .contact-form .contact-form-text {
+  display: block;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 1.6rem 0;
+  border: 0;
+  background-color: #111;
+  padding: 2rem 4rem;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-section .contact-form .contact-form-text:hover {
+  box-shadow: 0 0 1rem 0.4rem #34495e;
 }
