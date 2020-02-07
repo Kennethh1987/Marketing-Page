@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0 auto;
+}
+.navbar {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.navbar a {
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 100%;
+  padding-right: 10%;
+  color: white;
+}
+.navbar .nav-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .navbar {
+    width: 100vw;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #f4f4f4;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+body #showcase {
+  background-image: url('../img/marketdark.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+body #showcase h1 {
+  font-size: 5rem;
+  font-family: 'Bitter', serif;
+  line-height: 1.2;
+  margin-bottom: 10%;
+  color: #f4f4f4;
+}
+body .button {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 10px 20px;
+}
+body .button:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+.sectA {
+  padding: 2%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.sectA h2 {
+  font-weight: bold;
+}
+.sectB {
+  padding: 2%;
+  background-color: #f4f4f4;
+  color: black;
+  text-align: center;
+}
+.sectB h2 {
+  font-weight: bold;
+}
+.sectC {
+  display: flex;
+}
+.sectC div {
+  padding: 2%;
+}
+.sectC .box-1,
+.sectC .box-3 {
+  background-color: #A6ABAB;
+  color: white;
+}
+.sectC .box-2 {
+  background-color: #f4f4f4;
+  color: black;
+}
+@media (max-width: 500px) {
+  .sectC {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+  }
+  .sectC * {
+    flex-basis: 30%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.contact-section {
+  background-image: url('../img/contact3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+.contact-section h1 {
+  text-align: center;
+  color: #f4f4f4;
+}
+.contact-section .border {
+  width: 10rem;
+  height: 1rem;
+  background-color: #34495e;
+  margin: 4rem auto;
+}
+.contact-section .contact-form {
+  max-width: 60rem;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  .contact-section .contact-form {
+    padding: 0;
+    margin: 0;
+  }
+}
+.contact-section .contact-form .textarea {
+  resize: none;
+  height: 12rem;
+}
+.contact-section .contact-form .contact-form-btn {
+  float: center;
+  border: 0;
+  background-color: #34495e;
+  padding: 1.2rem 5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-section .contact-form .contact-form-btn:hover {
+  background-color: #2980b9;
+}
+.contact-section .contact-form .contact-form-text {
+  display: block;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 1.6rem 0;
+  border: 0;
+  background-color: #111;
+  padding: 2rem 4rem;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-section .contact-form .contact-form-text:hover {
+  box-shadow: 0 0 1rem 0.4rem #34495e;
+}

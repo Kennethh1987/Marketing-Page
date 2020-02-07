@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    //    background-image: url('../img/contactpage.jpg');
+    //     background-size: cover;
+}
+
+
+
+
+// .contact-section{
+
+//     background-image: url('../img/marketdark.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     height:100vh;
+//     opacity: 95%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     padding: 0 20px;
+//     font-weight: bold;
+
+
+//  }
+
+.contact-section {
+
+    background-image: url('../img/contact3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: bold;
+   
+    h1 {
+        text-align: center;
+        color: #f4f4f4;
+    }
+
+    .border {
+        width: 10rem;
+        height: 1rem;
+        background-color: #34495e;
+        margin: 4rem auto;
+
+    }
+
+    .contact-form {
+        max-width: 60rem;
+        margin: auto;
+        padding: 0 1rem;
+        overflow: hidden;
+     @media @phone {
+           padding: 0;
+           margin: 0;
+        }
+
+        .textarea {
+            resize: none;
+            height: 12rem;
+        }
+
+        .contact-form-btn {
+            float: center;
+            border: 0;
+            background-color: #34495e;
+            padding:  1.2rem 5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                background-color: #2980b9;
+            }
+        }
+
+        .contact-form-text {
+            display: block;
+            width: 100vw;
+            box-sizing: border-box;
+            margin: 1.6rem 0;
+            border: 0;
+            background-color: #111;
+            padding: 2rem 4rem;
+            outline: none;
+            color: #ddd;
+            transition: 0.5s;
+
+            &:hover {
+                box-shadow: 0 0 1rem 0.4rem #34495e;
+            }
+
+
+        }
+    }
+}

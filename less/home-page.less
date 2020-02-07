@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color: #f4f4f4;
+
+    line-height: 1.6;
+    overflow-x: hidden;
+
+
+
+
+    #showcase {
+        background-image: url('../img/marketdark.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        opacity: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        font-weight: bold;
+
+
+
+        h1 {
+            font-size: 5rem;
+            font-family: 'Bitter', serif;
+            line-height: 1.2;
+            margin-bottom: 10%;
+            color: #f4f4f4;
+
+
+        }
+
+    }
+
+    .button {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #f4f4f4;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 2%;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: #f4f4f4;
+            color: black;
+        }
+
+
+
+    }
+}
+
+.sectA {
+    padding: 2%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.sectB {
+    padding: 2%;
+    background-color: #f4f4f4;
+    color: black;
+    text-align: center;
+
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.sectC {
+    display: flex;
+
+    div {
+        padding: 2%;
+    }
+
+
+    .box-1,
+    .box-3 {
+        background-color: #A6ABAB;
+        color: white;
+    }
+
+    .box-2 {
+        background-color: #f4f4f4;
+        color: black;
+
+    }
+
+    @media @phone {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        font-size: smaller;
+
+
+        * {
+            flex-basis: 30%;
+        }
+
+
+    }
+
+}
+
+
