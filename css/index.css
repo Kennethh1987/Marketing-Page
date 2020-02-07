@@ -248,6 +248,10 @@ body .button:hover {
     flex-basis: 30%;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 .contact-section {
   background-image: url('../img/contact3.jpg');
   background-size: cover;
@@ -281,6 +285,11 @@ body .button:hover {
 .contact-section .contact-form .textarea {
   resize: none;
   height: 12rem;
+}
+.contact-section .contact-form .contact-form-btn {
+  float: right;
+  border: 0;
+  background-color: #34495e;
 }
 .contact-section .contact-form .contact-form-text {
   display: block;
