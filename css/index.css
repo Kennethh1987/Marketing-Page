@@ -282,14 +282,27 @@ body .button:hover {
   padding: 0 1rem;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .contact-section .contact-form {
+    padding: 0;
+    margin: 0;
+  }
+}
 .contact-section .contact-form .textarea {
   resize: none;
   height: 12rem;
 }
 .contact-section .contact-form .contact-form-btn {
-  float: right;
+  float: center;
   border: 0;
   background-color: #34495e;
+  padding: 1.2rem 5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-section .contact-form .contact-form-btn:hover {
+  background-color: #2980b9;
 }
 .contact-section .contact-form .contact-form-text {
   display: block;

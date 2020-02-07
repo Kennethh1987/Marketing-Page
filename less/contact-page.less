@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
-   
-//    background-image: url('../img/contactpage.jpg');
-//     background-size: cover;
+
+    //    background-image: url('../img/contactpage.jpg');
+    //     background-size: cover;
 }
 
 
 
 
 // .contact-section{
- 
+
 //     background-image: url('../img/marketdark.jpg');
 //     background-size: cover;
 //     background-position: center;
@@ -41,7 +41,7 @@
     text-align: center;
     padding: 0 20px;
     font-weight: bold;
-
+   
     h1 {
         text-align: center;
         color: #f4f4f4;
@@ -60,16 +60,28 @@
         margin: auto;
         padding: 0 1rem;
         overflow: hidden;
-.textarea{
-    resize: none;
-    height: 12rem;
-}
-.contact-form-btn{
-   float: center;
-    border: 0;
-    background-color:#34495e;
-    padding: 2%;
-}
+     @media @phone {
+           padding: 0;
+           margin: 0;
+        }
+
+        .textarea {
+            resize: none;
+            height: 12rem;
+        }
+
+        .contact-form-btn {
+            float: center;
+            border: 0;
+            background-color: #34495e;
+            padding:  1.2rem 5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover{
+                background-color: #2980b9;
+            }
+        }
 
         .contact-form-text {
             display: block;
