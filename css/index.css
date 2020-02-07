@@ -145,11 +145,9 @@ body {
 }
 .navbar a {
   text-align: center;
-  padding: 1%;
   text-decoration: none;
   font-size: 2rem;
   width: 100%;
-  padding-right: 10%;
   color: white;
 }
 .navbar .nav-links {
@@ -181,7 +179,7 @@ body #showcase {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 2rem;
   font-weight: bold;
 }
 body #showcase h1 {
@@ -190,6 +188,13 @@ body #showcase h1 {
   line-height: 1.2;
   margin-bottom: 10%;
   color: #f4f4f4;
+}
+@media (max-width: 500px) {
+  body #showcase h1 {
+    line-height: 2;
+    position: relative;
+    bottom: 1.8rem;
+  }
 }
 body .button {
   font-size: 2rem;
@@ -263,7 +268,7 @@ body .button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 2rem;
   font-weight: bold;
 }
 .contact-section h1 {
